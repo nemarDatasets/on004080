@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "CCEP ECoG dataset across age 4-51",
-  "description": "This dataset comprises intracranial electrocorticographic (ECoG) recordings of cortico-cortical evoked potentials (CCEPs) obtained from 74 patients aged 4-51 years during single-pulse electrical stimulation. Recorded at the University Medical Center Utrecht as part of the RESPect database for epilepsy surgery patients, the dataset includes electrode positions mapped to the Destrieux atlas and MNI152 space, enabling investigation of developmental trajectories in neural transmission speed across the human lifespan.",
-  "methods_description": "Cortico-cortical evoked potentials were measured using electrocorticography (ECoG) during single-pulse electrical stimulation (SPES). Electrode positions were estimated using Freesurfer on individual subject MRI scans with Destrieux atlas labels, then converted to MNI152 space using surface-based non-linear transformation. Data are organized in BIDS format with sessions and runs indicating recording day and time point during the monitoring period.",
+  "description": "This dataset comprises intracranial electrocorticographic (ECoG) recordings of cortico-cortical evoked potentials (CCEPs) obtained from 74 patients aged 4-51 years during single-pulse electrical stimulation. Recorded at the University Medical Center Utrecht as part of the RESPect registry for epilepsy surgery patients, the data includes electrode positions mapped to the Destrieux atlas and MNI152 space, enabling investigation of developmental trajectories in neural transmission speed across the human lifespan.",
+  "methods_description": "Cortico-cortical evoked potentials were measured using electrocorticography (ECoG) during single-pulse electrical stimulation (SPES). Electrode positions were estimated using Freesurfer on individual subject MRI scans with Destrieux atlas labels, then converted to MNI152 space using surface-based non-linear transformation. Data are organized in BIDS format with sessions and runs indicating recording timepoints during the monitoring period.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -26,13 +26,10 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
     },
     {
-      "term": "cortico-cortical evoked potentials"
+      "term": "evoked potentials"
     },
     {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "electrical stimulation"
+      "term": "intracranial recording"
     },
     {
       "term": "neural transmission"
@@ -42,6 +39,9 @@
     },
     {
       "term": "epilepsy surgery"
+    },
+    {
+      "term": "brain connectivity"
     }
   ],
   "related_identifiers": [
