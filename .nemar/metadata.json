@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "CCEP ECoG dataset across age 4-51",
+  "description": "This dataset comprises intracranial electrocorticographic (ECoG) recordings of cortico-cortical evoked potentials (CCEPs) obtained from 74 patients aged 4-51 years during single-pulse electrical stimulation. Recorded at the University Medical Center Utrecht as part of the RESPect database for epilepsy surgery patients, the dataset includes electrode positions mapped to the Destrieux atlas and MNI152 space, enabling investigation of developmental trajectories in neural transmission speed across the human lifespan.",
+  "methods_description": "Cortico-cortical evoked potentials were measured using electrocorticography (ECoG) during single-pulse electrical stimulation (SPES). Electrode positions were estimated using Freesurfer on individual subject MRI scans with Destrieux atlas labels, then converted to MNI152 space using surface-based non-linear transformation. Data are organized in BIDS format with sessions and runs indicating recording day and time point during the monitoring period.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,12 +19,32 @@
     "F.S.S. Leijten": {},
     "D. Hermes": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004080.v1.2.4",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
     },
+    {
+      "term": "cortico-cortical evoked potentials"
+    },
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "electrical stimulation"
+    },
+    {
+      "term": "neural transmission"
+    },
+    {
+      "term": "developmental neuroscience"
+    },
+    {
+      "term": "epilepsy surgery"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004080",
       "identifier_type": "URL",
@@ -37,6 +59,11 @@
       "identifier": "10.1038/s41593-023-01272-0",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004080.v1.2.4",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -59,12 +86,12 @@
       "award_title": "Alexandre Suerman MD/PhD Stipendium 2015"
     }
   ],
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
-    "66.5 MB (67 files)"
+    "287.7 GB (374 files)"
   ],
   "formats": [
     ".eeg",
@@ -75,34 +102,8 @@
     ".tsv",
     ".txt",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This dataset comprises intracranial electrocorticography (ECoG) recordings of cortico-cortical evoked potentials (CCEPs) obtained from 74 patients aged 4-51 years during single-pulse electrical stimulation. Recorded at the University Medical Center Utrecht as part of the RESPect epilepsy surgery database, the data includes electrode positions mapped to the Destrieux atlas and MNI152 space, enabling investigation of developmental trajectories in neural transmission speed across the human lifespan.",
-  "methods_description": "Cortico-cortical evoked potentials were measured using intracranial electrocorticography (ECoG) during single-pulse electrical stimulation (SPES). Electrode positions were estimated using Freesurfer on individual subject MRI scans with Destrieux atlas labels, then converted to MNI152 space using surface-based non-linear transformation. Data are organized according to BIDS specification with sessions and runs indicating recording timepoints during the monitoring period.",
-  "keywords": [
-    {
-      "term": "Electrocorticography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
-    },
-    {
-      "term": "cortico-cortical evoked potentials"
-    },
-    {
-      "term": "intracranial electrodes"
-    },
-    {
-      "term": "epilepsy surgery"
-    },
-    {
-      "term": "neural transmission speed"
-    },
-    {
-      "term": "developmental neuroscience"
-    },
-    {
-      "term": "brain connectivity"
-    }
-  ],
-  "source_hash": "96a8406b956897f5f3439157638ee3a0f9c269833f689c50e0020ac5e3a6c29e"
+  "source_hash": "f76603ff12a53c61ac409b7d27c6607c96f15052542f9a32411e106b953ea436"
 }
