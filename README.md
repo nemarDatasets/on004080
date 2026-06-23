@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004080-blue)](https://doi.org/10.82901/nemar.on004080)
+
 # Dataset description
 This dataset consists of 74 patients age 4-51 years old where Cortico-Cortical Evoked Potentials (CCEPs) were measured with Electro-CorticoGraphy (ECoG) during single pulse electrical stimulation. For a detailed description see:
 
