@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "CCEP ECoG dataset across age 4-51",
-  "description": "This dataset contains intracranial electrocorticography (ECoG) recordings of Cortico-Cortical Evoked Potentials (CCEPs) from 74 patients aged 4-51 years, collected during clinical single pulse electrical stimulation (SPES) as part of the RESPect epilepsy surgery patient registry at UMC Utrecht. The data were used to study the developmental trajectory of neural transmission speed across the human lifespan. Electrode positions were localized using Freesurfer with Destrieux atlas labeling and mapped to MNI152 space.",
-  "methods_description": "CCEPs were measured with ECoG during single pulse electrical stimulation (SPES) in epilepsy surgery patients. Electrode positions were estimated using Freesurfer on individual subject MRI scans, labeled with the Destrieux atlas based on the most common surface label within a sphere around each electrode, then converted to MNI152 space using Freesurfer surface-based non-linear transformation.",
+  "description": "This dataset contains cortico-cortical evoked potentials (CCEPs) recorded with electrocorticography (ECoG) during single pulse electrical stimulation in 74 patients aged 4-51 years. It was collected at the University Medical Center Utrecht as part of the RESPect epilepsy surgery registry and supports investigation of how signal transmission speed in the human brain develops with age. Data are organized in BIDS with electrode positions labeled by Destrieux atlas and transformed to MNI152 space.",
+  "methods_description": "CCEPs were measured with ECoG during clinical single pulse electrical stimulation (SPES) in patients undergoing monitoring for epilepsy surgery. Electrode positions were localized on individual MRI, labeled with Destrieux atlas regions using Freesurfer, and converted to MNI152 space using a surface-based non-linear transformation.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,31 +21,25 @@
   },
   "keywords": [
     {
-      "term": "Electrocorticography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+      "term": "Electrocorticography"
     },
     {
-      "term": "Evoked Potentials",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005071"
+      "term": "Evoked Potentials"
     },
     {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+      "term": "Epilepsy"
     },
     {
-      "term": "single pulse electrical stimulation"
+      "term": "iEEG"
     },
     {
       "term": "cortico-cortical evoked potentials"
     },
     {
-      "term": "brain development"
+      "term": "single pulse electrical stimulation"
     },
     {
-      "term": "iEEG"
+      "term": "brain development"
     }
   ],
   "related_identifiers": [
@@ -72,16 +66,22 @@
   ],
   "funding_references": [
     {
+      "funder_name": "Alexandre Suerman Stipendium 2015"
+    },
+    {
+      "funder_name": "EpilepsieNL #17-07"
+    },
+    {
       "funder_name": "National Institute of Mental Health",
       "award_number": "R01MH122258"
     },
     {
       "funder_name": "EpilepsieNL",
-      "award_number": "17-07"
+      "award_number": "NEF17-07"
     },
     {
-      "funder_name": "UMC Utrecht Alexandre Suerman MD/PhD Stipendium",
-      "award_number": "2015"
+      "funder_name": "UMC Utrecht",
+      "award_title": "Alexandre Suerman MD/PhD Stipendium 2015"
     }
   ],
   "resource_type_specific": "iEEG Dataset",
@@ -89,7 +89,7 @@
     "ieeg"
   ],
   "sizes": [
-    "287.7 GB (374 files)"
+    "268 GB (374 files)"
   ],
   "formats": [
     ".eeg",
